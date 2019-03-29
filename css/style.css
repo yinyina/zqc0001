@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0;}
+html{overflow:hidden;}
+body{background:url(../img/bg.jpg) no-repeat center center;/*background:url(../img/bg.png) repeat; */overflow:hidden; font-family:Microsoft YaHei,"微软雅黑";}
+.pageup{width:32px; height:32px; background:url(../img/pageup-n.png) no-repeat; position:absolute; top:0; left:90px; z-index:2; cursor:pointer;}
+.pageup:hover{background:url(../img/pageup-c.png) no-repeat;}
+.pagedown{width:32px; height:32px; background:url(../img/pagedown-n.png) no-repeat; position:absolute; bottom:0; left:90px; z-index:2; cursor:pointer;}
+.pagedown:hover{background:url(../img/pagedown-c.png) no-repeat;}
+.line{width:14px; height:100%;/* background:url(../img/line.png) repeat-y;*/ position:absolute; top:0; z-index:1; left:100px;}
+.showpage{width:180px; padding-left:28px; height:60px; padding-top:4px; background:url(../img/showpage_bg.png) 20px 22px no-repeat; position:absolute; top:32px; left:0; z-index:2;} 
+.showpage span{font:16px/60px 微软雅黑,黑体,宋体; color:#FFF; display:block; float:left; text-align:center;}
+.showpage .span1{width:65px;}
+.showpage .span2{width:26px;}
+.showpage .span3{width:80px; padding-left:5px; text-align:left;}
+#spbt { position:absolute; top:49px; left:215px; z-index:1; height:37px; line-height:37px; width:760px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; font-size:16px; color:#fff;}
+
+#maincnt{position:absolute; z-index:1;}
+#maincnt .video_bg { position:absolute; left:0; top:0; z-index:-1; width:100%; height:100%;/* background:url(../img/video_bg.jpg) repeat;*/}
+#cnt{ margin:0 auto;}
+
+#kcjs{position:absolute; z-index:1; height:37px; line-height:37px; padding:0px 10px;}
+#kcjs li{width:120px; height:37px; line-height:37px; float:left; list-style:none; color:#FFF; font-size:16px; text-align:center; cursor:pointer; position:relative; background:url(../img/d1.png) no-repeat center center;}
+#kcjs li p { display:none; width:120px; position:absolute; left:0; bottom:37px; background:#eee; color:#333;}
+#kcjs li p span { display:block; width:100%; height:30px; line-height:30px; cursor:pointer;}
+.current { background:#999999; color:#fff;} 
+
+#menu{width:320px; position:absolute; top:0; z-index:100;}
+#menu .h1bg{width:320px; height:110px; background:url(../img/title.png);}
+#menu .h1 { display:table; _position:relative; overflow:hidden; width:280px; padding:0 20px; height:110px; font-size:22px; font-family:Microsoft YaHei,"微软雅黑"; color:#ffffff; text-align:center; opacity:1; position:absolute; top:0; left:0; z-index:2;}
+#menu .h1 .biaoti { vertical-align:middle; text-align:center; display:table-cell; _position:absolute; _top:50%;} 
+#menu .h1 .biaoti span { _position:relative; _top:-50%; }
+#menu h2{width:320px; height:50px; font:16px/50px 微软雅黑,黑体,宋体; letter-spacing:2px; background:url(../img/menu_h2.png); opacity:0.9; filter:alpha(opacity=90);  text-indent:60px; color:#000;}
+#list{width:320px; background:url(../img/listul.png) repeat-y;/* opacity:0.9; filter:alpha(opacity=90);*/ overflow:hidden; position:relative;} 
+#list ul{width:300px; float:left; position:absolute;}
+#scroll{width:20px; height:100%; float:right; position:relative;}
+#scrollbox{width:20px; position:absolute; display:none;}
+#icon1{width:34px; height:39px; font:18px/39px "微软雅黑"; font-weight:bold; color:#f0f0f0; text-align:center; cursor:pointer;/*background:#217bf5;*/ background:url(../img/jt.png) no-repeat;/* opacity:0.7; filter:alpha(opacity=70);*/ position:absolute; z-index:2; left:-34px; top:10px;}
+#list li{list-style:none; width:220px; height:36px; font:16px/36px "微软雅黑"; color:#333; padding:0 45px 0 55px; opacity:1; filter:alpha(opacity=100); overflow:hidden; white-space:nowrap; text-overflow:ellipsis;} 
+
+/*课程简介弹出框*/
+#tandiv { display:none; position:absolute; z-index:999; width:100%; height:100%;}
+#tandiv .nr_bg { position:absolute; left:0; top:0; z-index:1000; width:100%; height:100%; background:#000; opacity:0.8; filter:alpha(opacity=80);}
+#tandiv p { width:100%; height:30px; overflow:hidden;}
+#tandiv #close { float:right; width:50px; text-align:right; font-size:18px; color:#fff; font-weight:700; cursor:pointer;}
+#tandiv #nr_box { position:absolute; z-index:1001; left:50%; margin-left:-500px; width:1000px; height:100px;}
+#tandiv #nr_jj { background:#ccc;}
+
+
+/*弹出题样式*/
+#videoBox { display:none; position:relative; margin:0 auto; z-index:9999; width:100%; height:100%;}
+#videoBox .dati_bg { position:absolute; left:0; top:0; z-index:9999; width:100%; height:100%; opacity:0.8; background:#000}
+#dati{ display:none; position:absolute; color:#333; display:block; z-index:999999999; width:600px; height:400px; top:50%; left:50%; margin:-200px 0 0 -300px; background:url(../img/abg.png) 0 35px; opacity:1;}
+#dati .taitou { padding:0 20px; height:35px; line-height:35px; background:#369; color:#fff; font-size:14px;}
+#testnr { margin-top:20px; padding:0 10px 0 20px; height:325px; overflow-y:auto;}
+#p1,#p2 { line-height:22px;}
+#p3 { text-align:center; padding:20px 0;}
+#p3 .sub { padding:3px 4px; font-size:14px; cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
